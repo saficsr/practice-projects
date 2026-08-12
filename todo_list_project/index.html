@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="addPart">
+        <div class="header1">
+            <h2 class="header1">ToDo List</h2>
+        </div>
+        <div class="firstRow">
+            <form class="todoAddForm">
+                <input type="text" placeholder="Type to add new todo..." class="addBox" id="addBox">
+                <button class="addButton" id="todoAddButton" type="submit">Add</button>
+            </form>
+        </div>
+        </div>
+        <div class="todosPart">
+        <div class="header2">
+            <h2 class="header2">Search Todo</h2>
+        </div>
+        <div class="secondRow">
+            <form class="filterTodo">
+                <input type="text" placeholder="Type to search..." class="filterInput" id="filterInput">
+            </form>
+        </div>
+        <div class="thirdRow">
+            <ol type="1" class="newTodos" id="newTodos"></ol>
+        </div>
+        <div class="clearAll">
+            <button class="clearButton" id="clearAllTodo" type="button">Remove All</button>
+        </div>
+        </div>
+    </div>
+   <script src="app.js"></script> 
+</body>
+</html>

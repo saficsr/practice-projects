@@ -1,0 +1,104 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+
+body {
+    background-color: rgba(3, 3, 3, 0.866);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.calculator-app {
+    background-color: rgba(0, 0, 0, 0.108);
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    max-width: 90%;
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#prevDisplay {
+    background-color: black;
+    color: lightgray;
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: right;
+    cursor: default;
+}
+
+#currentDisplay {
+    background-color: black;
+    color: gray;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px;
+    text-align: right;
+    cursor: default;
+}
+
+.allBtn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+#btn-zero {
+    grid-column: span 3;
+
+}
+
+.btn.equals {
+    background-color: orange;
+    color: white;
+
+}
+
+.operator {
+    background-color: orange;
+    color: white;
+
+}
+
+.number {
+    background-color: rgb(78, 78, 78);
+}
+
+.btn {
+    border-radius: 30px;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.clear {
+    background-color: rgb(146, 143, 143);
+}
+
+.dot {
+    background-color: rgb(146, 143, 143);
+}
+
+.remove {
+    background-color: rgb(146, 143, 143);
+}

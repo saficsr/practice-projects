@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen">
+        <div class="cities">
+            <form class="searchForm">
+                <input type="text" placeholder="Şehir arayın..." class="searchInput">
+                <button class="searchBtn">Ara</button>
+            </form>
+        </div>
+
+        <div class="board main">
+            <div class="cityDetails">
+                <span class="cityName">İstanbul</span>
+                <span class="date">Cuma, 14:00</span>
+                <span class="temperature">24°</span>
+                <span class="weather">Parçalı bulutlu</span>
+            </div>
+            <div class="weatherIcon">
+                <span class="dynamicIcon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></span>
+            </div>
+        </div>
+
+        <div class="boardDetails">
+            <div class="perceivedTemperature">
+                <p><i class="fa-solid fa-temperature-three-quarters" aria-hidden="true"></i> Hissedilen</p>
+                <span class="perceivedTemperatureValue">26°</span>
+            </div>
+            <div class="wind">
+                <p><i class="fa-solid fa-wind" aria-hidden="true"></i> Rüzgar</p>
+                <span class="windValue">12 km/s</span>
+            </div>
+            <div class="humidity">
+                <p><i class="fa-solid fa-droplet" aria-hidden="true"></i> Nem</p>
+                <span class="humidityValue">%58</span>
+            </div>
+        </div>
+
+        <div class="board forecast">
+            <div class="day">
+                <span class="dayName">Cmt</span>
+                <span class="dayIcon"><i class="fa-solid fa-sun" aria-hidden="true"></i></span>
+                <span class="tempMax">27°</span>
+                <span class="tempMin">18°</span>
+            </div>
+            <div class="day">
+                <span class="dayName">Paz</span>
+                <span class="dayIcon"><i class="fa-solid fa-sun" aria-hidden="true"></i></span>
+                <span class="tempMax">28°</span>
+                <span class="tempMin">19°</span>
+            </div>
+            <div class="day">
+                <span class="dayName">Pzt</span>
+                <span class="dayIcon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></span>
+                <span class="tempMax">25°</span>
+                <span class="tempMin">17°</span>
+            </div>
+            <div class="day">
+                <span class="dayName">Sal</span>
+                <span class="dayIcon"><i class="fa-solid fa-cloud-rain" aria-hidden="true"></i></span>
+                <span class="tempMax">21°</span>
+                <span class="tempMin">15°</span>
+            </div>
+            <div class="day">
+                <span class="dayName">Çar</span>
+                <span class="dayIcon"><i class="fa-solid fa-cloud-rain" aria-hidden="true"></i></span>
+                <span class="tempMax">22°</span>
+                <span class="tempMin">16°</span>
+            </div>
+        </div>
+
+        <div class="boardState">
+            <div class="loadingCard">
+                <span class="loadingMessage">Yükleniyor...</span>
+            </div>
+            <div class="errorCard">
+                <span class="errorMessage">Şehir bulunamadı</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

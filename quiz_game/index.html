@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card start-screen">
+            <div class="header">
+                <p id="quiz-type">GENERAL KNOWLEDGE</p>
+                <h1>Quiz Time</h1>
+                <p id="contents">5 questions-20 seconds each</p>
+                <hr>
+            </div>
+            <div class="info">
+            <ul>
+                <li>One answer per question</li>
+                <li>You can change your pick before moving on</li>
+                <li>Wrong answers are revealed at the end</li>
+            </ul>
+            <button class="btn start-btn" disabled>Start</button>
+            </div>
+        </div>
+        <div class="card question-cards hidden">
+            <div class="top">
+                <p>QUESTION <span id="question-progression">0</span> of 5</p>
+                <span id="counter">00:20</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="question-text">
+                <p>question</p>
+            </div>
+            <div class="answer-cards">
+            </div>
+            <div class="next">
+                <button class="btn next-btn" disabled>Next question</button>
+            </div>
+        </div>
+        <div class="card result-screen hidden">
+            <div class="result-top">
+                <p id="result-text">RESULT</p>
+                <p>You scored</p>
+                <div class="percentage">
+                    <p id="score"><span id="answered-numbers">3</span>/5</p>
+                <p><span id="correct-percentage">60</span>%correct</p>
+            </div>
+            </div>
+            <hr>
+            <div class="miss-text">
+                <p>What you missed</p>
+            </div>
+            <div class="review-list">
+
+            </div>
+            <div class="restart">
+                <button class="btn restart-btn">Play again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
