@@ -317,6 +317,11 @@ body {
     width: 100%;
 }
 
+#product-description {
+    resize: vertical;
+    min-height: 80px;
+}
+
 #btn-add {
     background-color: #0f766e;
     color: #ffffff;
