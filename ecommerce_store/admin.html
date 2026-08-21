@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Ürün Yönetimi</h1>
+        <a href="index.html">Mağazaya Git</a>
+    </div>
+    <div class="container">
+        <div class="card add">
+            <input type="text" id="product-name" placeholder="Ürün adı">
+            <input type="number" id="product-price" placeholder="Fiyat">
+            <input type="text" id="product-category" placeholder="Kategori">
+            <input type="number" id="product-stock" placeholder="Stok adedi">
+            <textarea id="product-description" placeholder="Açıklama"></textarea>
+            <input type="file" id="product-image" accept="image/*">
+            <img id="image-preview" alt="Ürün görseli önizlemesi">
+            <button type="button" id="btn-add">Ekle</button>
+        </div>
+        <div class="card" id="product-list"></div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

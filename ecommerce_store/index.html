@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-ticaret uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Mağaza</h1>
+        <div class="header-right">
+            <a href="admin.html">Yönetim</a>
+            <div class="cart-wrapper">
+                <button id="cart-btn">Sepet</button>
+                <div class="cart-panel hidden">
+                    <div id="cart-items"></div>
+                    <p id="total">Toplam tutar: <span id="total-amount"></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="search">
+        <input id="search-input" placeholder="Ürün ara" type="search">
+        <div id="category-filter"></div>
+    </div>
+    <div id="product-grid">
+    </div>
+    <div id="modal-overlay" class="hidden">
+        <div id="product-modal">
+            <button id="close-btn">X</button>
+            <img id="modal-img">
+            <h3 id="modal-name"></h3>
+            <p id="modal-price"></p>
+            <p id="modal-category"></p>
+            <p id="modal-stock"></p>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
