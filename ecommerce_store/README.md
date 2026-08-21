@@ -5,7 +5,8 @@ A small shopping site with a separate admin panel, built with plain HTML, CSS an
 I built this to practice DOM manipulation, array methods and browser storage after finishing the basics of JavaScript. The interface text is in Turkish.
 
 **[Live demo](adres)** — the store starts empty; add a few products from the admin panel first.
-![Store page](screenshot.png)
+![Store page](store.png)
+![Admin panel](admin.png)
 
 ## What it does
 
