@@ -35,6 +35,19 @@ one. Restarting fetches a fresh set of questions.
 
 [Live demo](https://saficsr.github.io/practice-projects/quiz_game/) · `quiz-app/`
 
+## Ecommerce Store
+
+A shopping site with a separate admin panel. Products are added, edited
+and deleted from the admin page; the store page lists them with search, category
+filters, a product detail modal and a shopping cart. Both pages share the same 
+`localStorage`, and uploaded images are resized in the browser with canvas before
+being saved so they fit in the storage quota.
+
+**[Live demo](https://saficsr.github.io/practice-projects/ecommerce_store/index.html)** 
+— the store starts empty; add a few products from the admin panel first.
+
+[Read more](ecommerce_store)
+
 ## Built with
 
 HTML, CSS, JavaScript (ES6+). No build tools — each project runs by
